@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Prasanth">
+      <meta name="viewport" content="width=device-width, initial-scale=2.0">
+      <title>Gallery</title>
+      <style>
+          :root {
+  --color-primary: #0073ff;
+  --color-white:black;
+  --color-black:white;
+  --color-black-1: #212b38;
+}
+
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+          
+          #landscape img {
+              width: 30%;
+              height: 250px;
+              padding: 10px;
+          }
+          #portrait img {
+              width: 30%;
+              height: 500px;
+              padding: 10px;
+          }
+          body{
+            margin-left:20px;
+          }
+          img:hover{
+        filter:grayscale(100%);
+        transform: scale(1.1);
+          }
+          .slider {
+              position: relative;
+              overflow:hidden;              
+          }
+          .btn{
+position:relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.btn{
+  background: linear-gradient(90deg, #b576c4, #5f27cd);
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 2px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+}
+
+.btn:hover{
+  background: linear-gradient(90deg, #d50fff, #44199a);
+}
+                           
+      </style>
+</head>
+<body style="background-color:black; color:whitesmoke">
+    <div class="menu-bar">
+        <h1 class="logo">Everything<span>Photography!</span></h1>
+        <ul>
+          <li><a href="hire_freelancer_2.html"><font size="5">Home</font></a></li>
+          <li><a href="#"><font size="5">Blog</font> <i class="fas fa-caret-down"></i></a>
+  
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="div_gallery.html">Gallery</a></li>
+                  <li><a href="article_card.html">Articles</a></li>
+                </ul>
+              </div>
+        </li> <li><a href="#"><font size="5">Freelance</font> <i class="fas fa-caret-down"></i></a>
+  
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+                <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+              </ul>
+            </div>
+      </li> <li><a href="#"><font size="5">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="Courses-2.0.html">Courses</a></li>
+                    <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                    <li><a href="e-Books-2.0.html">e-Books</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="#"><font size="5">Gear</font> <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="gear_product_card_2.html">Products</a></li>
+                    <li><a href="comparisions_2.html">Comparisions</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="homepage_2.html"><font size="5">Contact Us</font></a>
+          </li>
+        </ul>
+      </div>
+    <p style="font-size: 60px; font-weight: bold;"><marquee behavior="alternate"><b>GALLERY</b></marquee></p>
+    
+    <div style="margin-left:35px;"><h1><font  face="Times New Roman', Times, serif" color="#ffffff" size="8"><b>Categories:</b></font></h1></div>
+    <!--<ul type="circle">
+        <li><h3><div class="btn"><a href="#nature"; style="text-decoration: none; color:black;">Nature</a></div></h3></li>
+        <li><h3><a href="#streetphotography"; style="text-decoration: none; color:white;">Street Photography</a></h3></li>
+        <li><h3><a href="#travel"; style="text-decoration: none; color:white;">Travel</a></h3></li>
+        <li><h3><a href="#wildlife"; style="text-decoration: none; color:white;">Wild Life</a></h3></li>
+        <li><h3><a href="#architecture"; style="text-decoration: none; color:white;">Architecture</a></h3></li>
+    </ul>-->
+    <table cellspacing="30">
+        <tr>
+            <td>
+                <button type="button" class="btn"><a href="#nature">
+                    <font  face="arial" color="#ffffff" size="4">
+                        Nature
+                    </font>
+                </a></button>
+            </td>
+            </tr>
+            <tr>
+                <td>
+              <button type="button" class="btn">
+                  <a href="#streetphotography">
+                      <font  face="arial" color="#ffffff" size="4">
+                         Street Photography
+                      </font>
+                  </a></button>
+                  </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn"><a href="#travel">
+                    <font  face="arial" color="#ffffff" size="4">
+                        Travel
+                    </font>
+                </a></button>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn"><a href="#wildlife">
+                        <font  face="arial" color="#ffffff" size="4">
+                            Wildlife
+                        </font>
+                    </a></button>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn"><a href="#architecture">
+                            <font  face="arial" color="#ffffff" size="4">
+                                Architecture
+                            </font>
+                        </a></button>
+                    </td>
+                    </tr>
+      </table>
+    
+    <br><br><br><hr>
+    <p style="font-size: 30px;">Nature</p>
+    <!--Nature-->
+    <div class="slider" id="nature">
+        <div id="landscape">
+            <a href="https://images.unsplash.com/photo-1619867056190-d86aaf07a1c9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619867056190-d86aaf07a1c9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1551798060-c10f7302bf4f?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1551798060-c10f7302bf4f?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619253187768-ff0262fb08b2?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619253187768-ff0262fb08b2?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        </div>
+        <div id="portrait">
+            <a href="https://images.unsplash.com/photo-1606744666360-2f22c8b4a45b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1606744666360-2f22c8b4a45b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1576277747552-32882dcf0d9e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1576277747552-32882dcf0d9e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1616235352608-0c314f4b9027?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1616235352608-0c314f4b9027?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        </div>
+    </div>
+    <br><br><hr>
+    <p style="font-size: 30px;">Street Photography</p>
+    <div class="slider" id="streetphotography">
+        <div class="box" id="portrait">
+            <a href="https://images.unsplash.com/photo-1538502196992-cfee154f547c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1538502196992-cfee154f547c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1538356913997-b04286765811?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1538356913997-b04286765811?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eEh4WVRNSExnT2N8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619432595081-732aadeea03a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619432595081-732aadeea03a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        
+        </div>
+        <div class="box" id="landscape">
+            <a href="https://images.unsplash.com/photo-1512799545738-0625ef92a288?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1512799545738-0625ef92a288?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1615484398670-d04028664303?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1615484398670-d04028664303?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1526550517342-e086b387edda?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1526550517342-e086b387edda?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+
+        </div>
+    </div>
+    <br><br><hr>
+    <p style="font-size: 30px;">Travel</p>
+    <div class="slider" id="travel">
+        <div id="landscape">
+            <a href="https://images.unsplash.com/photo-1619800134984-1228b2731325?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619800134984-1228b2731325?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619868153444-02f89f486a4c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8RnpvM3p1T0hONnd8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619868153444-02f89f486a4c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8RnpvM3p1T0hONnd8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619271368075-5f22bbeb7935?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ4fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619271368075-5f22bbeb7935?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ4fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        
+        </div>
+        <div id="portrait">
+            <a href="https://images.unsplash.com/photo-1618767438211-11ffdb8e1861?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU2fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1618767438211-11ffdb8e1861?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU2fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1603814973246-1e16651053d8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY5fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1603814973246-1e16651053d8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY5fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1610643678560-bb3f9bdfe364?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1610643678560-bb3f9bdfe364?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        
+        </div>
+
+    </div>
+    <br><br><hr>
+    <p style="font-size: 30px;">Wild Life</p>
+    <div class="slider" id="wildlife">
+        <div id="landscape">
+            <a id="box" href="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a id="box" href="https://images.unsplash.com/photo-1569777504499-96759566c488?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMzYwMDY2fHxlbnwwfHx8fA==&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1569777504499-96759566c488?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMzYwMDY2fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"></a>
+            <a id="box" href="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1549480017-d76466a4b7e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        
+        </div>
+        <div id="portrait">
+            <a href="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwxMzYwMDY2fHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwxMzYwMDY2fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1520552159191-e28a1d9f0d7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1520552159191-e28a1d9f0d7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2lsZGxpZmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1486199149722-825253b06114?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbGRsaWZlfGVufDB8fDB8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1486199149722-825253b06114?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbGRsaWZlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+       
+        </div>
+    </div>
+    <br><br><hr>
+    <p style="font-size: 30px;">Architecture</p>
+    <div class="slider" id="architecture">
+        <div id="portrait">
+            <a href="https://images.unsplash.com/photo-1554289638-91dbcf39679e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1554289638-91dbcf39679e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1581004979089-e9093d61e475?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1581004979089-e9093d61e475?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8cm5TS0RId3dZVWt8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1553529043-dae04bec34c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"><img src="https://images.unsplash.com/photo-1553529043-dae04bec34c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"></a>
+            <a href="https://images.unsplash.com/photo-1619720655561-6813a562589e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619720655561-6813a562589e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619616711470-a229812e36a0?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHJuU0tESHd3WVVrfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619616711470-a229812e36a0?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+            <a href="https://images.unsplash.com/photo-1619436828293-508d1ca04015?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA==&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"><img src="https://images.unsplash.com/photo-1619436828293-508d1ca04015?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"></a>
+        
+        </div>
+    </div>
+   
+</body>
+</html>

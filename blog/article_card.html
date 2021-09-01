@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Case Study">
+      <meta name="keywords" content="HTML,CSS,JavaScript">
+      <meta name="author" content="Prasanth">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+          Articles
+      </title>
+      <link rel="stylesheet" type="text/css" href="card.css">
+      <script type="text/javascript" src="article_script.js">
+        /*function changeColorOver()
+        {
+            document.getElementById("readmore").style.backgroundColor="black";
+            document.getElementById("readmore").style.color="white"
+            
+        }
+        function changeColorOut()
+        {
+            document.getElementById("readmore").style.backgroundColor="whitesmoke";
+            document.getElementById("readmore").style.color="black"
+            
+        }*/
+      </script>
+      <style>
+          :root {
+  --color-primary: #0073ff;
+  --color-white:black;
+  --color-black:white;
+  --color-black-1: #212b38;
+}
+
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+      </style>
+    </head>
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">Everything<span>Photography!</span></h1>
+            <ul>
+              <li><a href="homepage_2.html"><font size="3">Home</font></a></li>
+              <li><a href="#"><font size="3">Blog</font> <i class="fas fa-caret-down"></i></a>
+      
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="div_gallery.html">Gallery</a></li>
+                      <li><a href="article_card.html">Articles</a></li>
+                    </ul>
+                  </div>
+            </li> <li><a href="#"><font size="3">Freelance</font> <i class="fas fa-caret-down"></i></a>
+      
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+                    <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+                  </ul>
+                </div>
+          </li> <li><a href="#"><font size="3">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="Courses-2.0.html">Courses</a></li>
+                        <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                        <li><a href="e-Books-2.0.html">e-Books</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#"><font size="3">Gear</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="gear_product_card_2.html">Products</a></li>
+                        <li><a href="comparisions_2.html">Comparisions</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="homepage_2.html"><font size="3">Contact Us</font></a>
+              </li>
+            </ul>
+          </div>
+        <center>
+        <div class="main_title">
+            <p>Photography Articles</p>
+        </div>
+        <div class="main_card">
+        
+            <!--Card 1-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> 
+            </div>
+            <div class="title">
+                <h1>Amazing Female Photographers you should know</h1>
+            </div>
+            <div class="des">
+                <p>For International Women’s Day, we would like to celebrate all the...</p>
+                <button id="card1" onmouseover="changeColorOver_a(this)" onmouseout="changeColorOut_a(this)" onclick="articleA(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 2-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://www.nyip.edu/media/zoo/images/do-photographers-need-a-college-degree-1_c16756df9c390b66ac20bc259ad5f2fc.jpg"> 
+            </div>
+            <div class="title">
+                <h1>Do Photographers need a college degree?</h1>
+            </div>
+            <br><br>
+            <div class="des">
+                <p>If you want to become a professional photographer, a helpful first step is exploring...</p>
+                <button id="card2" onmouseover="changeColorOver_b(this)" onmouseout="changeColorOut_b(this)" onclick="articleB(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 3-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://www.all-about-photo.com/images/articles/ART-808-4.jpg"> 
+            </div>
+            <div class="title">
+                <h1>Exclusive interview with Jacopo Della Valle</h1>
+            </div>
+            <br><br>
+            <div class="des">
+                <p>Jacopo Maria Della Valle is an Italian photographer who fell in love...</p>
+                <button id="card3" onmouseover="changeColorOver_c(this)" onmouseout="changeColorOut_c(this)" onclick="articleC(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 4-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://www.all-about-photo.com/images/articles/ART-953-3.jpg"> 
+            </div>
+            <div class="title">
+                <h1>How the Art of Photography has Influenced the World</h1>
+            </div>
+            <!--https://www.all-about-photo.com/photo-articles/photo-article/953/how-the-art-of-photography-has-influenced-the-world-->
+            <div class="des">
+                <p>Have you ever wondered how much photography has changed the world...</p>
+                <button id="card4" onmouseover="changeColorOver_d(this)" onmouseout="changeColorOut_d(this)" onclick="articleD(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 5-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://photographycourse.net/wp-content/uploads/2017/04/lens-aperture-closeup.jpg"> 
+            </div>
+            <div class="title">
+                <h1>What is Aperture? Introduction Lesson</h1>
+            </div>
+            <br><br><br>
+            <!--https://photographycourse.net/introduction-to-aperture/-->
+            <div class="des">
+                <p>Aperture in photography is a diaphragm in lenses that controls the amount of light...</p>
+                <button id="card5" onmouseover="changeColorOver_e(this)" onmouseout="changeColorOut_e(this)" onclick="articleE(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 6-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://all-things-photography.com/wp-content/uploads/2017/12/Beginning-Digital-Photography-thumb.jpg"> 
+            </div>
+            <div class="title">
+                <h1>Beginning Digital Photography.</h1>
+            </div>
+            <br><br>
+            <div class="des">
+                <p>You are beginning digital photography and have just joined the world of the “keen amateur photographer” and bought yourself a new Digital SLR,...</p>
+                <button id="card6" onmouseover="changeColorOver_f(this)" onmouseout="changeColorOut_f(this)" onclick="articleF(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 7-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://www.all-about-photo.com/images/articles/ART-805-2.jpg" height="222px"> 
+            </div>
+            <div class="title">
+                <h1>LCKDN20: Documenting the Abandoned City</h1>
+            </div>
+            <br><br><br><br>
+            <div class="des">
+                <p>Photography has always occupied an important place in my artistic career. It's not just about correctly framing the...</p>
+                <button id="card7" onmouseover="changeColorOver_g(this)" onmouseout="changeColorOut_g(this)" onclick="articleG(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 8-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://www.all-about-photo.com/images/articles/ART-976-1.jpg" height="222px"> 
+            </div>
+            <div class="title">
+                <h1>Using Drones to Strengthen Your Photography Business</h1>
+            </div>
+            <br><br><br><br>
+            <div class="des">
+                <p>The photography game has changed rapidly over the last 30 years. The transition from film photography to digital...</p>
+                <button id="card8" onmouseover="changeColorOver_h(this)" onmouseout="changeColorOut_h(this)" onclick="articleH(this)">Read More...</button>
+            </div>
+        </div>
+
+        <!--Card 9-->
+        <div class="cards">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qXr87GS0YbvcJs485vdhmnMRUyxep-5duw&usqp=CAU"> 
+            </div>
+            <div class="title">
+                <h1>Making Sure You Stand Out as a Freelance Photographer</h1>
+            </div>
+            <div class="des">
+                <p>Did you know there are almost 150,000 photographers in the U.S.? Of course, that number doesn't include those...</p>
+                <button id="card9" onmouseover="changeColorOver_i(this)" onmouseout="changeColorOut_i(this)" onclick="articleI(this)">Read More...</button>
+            </div>
+        </div>
+        
+        </div>
+        </center>
+    </body>
+</html>
