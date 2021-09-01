@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hire a freelancer</title>
+<style>
+ :root {
+  --color-primary: #0073ff;
+  --color-white:black;
+  --color-black:white;
+  --color-black-1: #212b38;
+}
+
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+</style>
+</head>
+<body style="background: rgb(97,91,188);
+background: linear-gradient(90deg, rgba(97,91,188,1) 0%, rgba(199,182,42,1) 97%);">
+ <div class="menu-bar">
+    <h1 class="logo">Everything<span>Photography!</span></h1>
+    <ul>
+      <li><a href="homepage_2.html"><font size="5">Home</font></a></li>
+      <li><a href="#"><font size="5">Blog</font> <i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown-menu">
+            <ul>
+              <li><a href="div_gallery.html">Gallery</a></li>
+              <li><a href="article_card.html">Articles</a></li>
+            </ul>
+          </div>
+    </li> <li><a href="#"><font size="5">Freelance</font> <i class="fas fa-caret-down"></i></a>
+
+      <div class="dropdown-menu">
+          <ul>
+            <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+            <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+          </ul>
+        </div>
+  </li> <li><a href="#"><font size="5">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="Courses-2.0.html">Courses</a></li>
+                <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                <li><a href="e-Books-2.0.html">e-Books</a></li>
+              </ul>
+            </div>
+      </li>
+      <li><a href="#"><font size="5">Gear</font> <i class="fas fa-caret-down"></i></a>
+
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="gear_product_card_2.html">Products</a></li>
+                <li><a href="comparisions_2.html">Comparisions</a></li>
+              </ul>
+            </div>
+      </li>
+      <li><a href="#"><font size="5">Contact Us</font></a>
+      </li>
+    </ul>
+  </div>
+
+    <h1><p style="text-align:center">Hire a Freelancer!!</p></h1> 
+    <hr width="200" color="#f3971b">
+    <hr width="300" color="#f3971b">
+    <table style="border: solid 1px #aaa999; background-color: aquamarine;" align="center" cellpadding="40"> 
+    <tr>
+      <td>
+      <form align="center">
+        <div style="text-align:center">
+          
+          <input type="text" placeholder="Name" name="name" required>
+          <br><br>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <h3>Choose a name for your project</h3>
+          <textarea row="20" cols="50" name="description" placeholder="e.g. Toodler Photoshoot"></textarea>  
+          <br>
+          <h3>Tell us more about your project</h3>
+          <p>Tell us a bit about yourself or your business, and include an overview of what you need done.</p>
+           <textarea row="20" cols="50" name="description" placeholder="Describe your project here..."></textarea>
+           <br>
+           <br>
+           <input type="file" name="file" accept="">
+           <br><br>
+           <label>
+               <br>
+             <input type="submit" value="Submit">
+             <input type="submit" value="Reset">
+           </label>
+        </div>
+      </form>
+      </td>
+      </tr>
+      </table>
+  
+</body>
+</html>  
