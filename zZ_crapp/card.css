@@ -1,0 +1,53 @@
+*{
+    margin-left: 5px;
+    margin-top:5px;
+    padding: 2px;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.cards{
+    width: 30%;
+    background-color:lightblue;
+    border:2px ridge black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right:5px;
+}
+.cards:hover{
+    transform:scale(1.1);
+    filter:hue-rotate(200deg);
+}
+.image img{
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+.title{
+    text-align:center;
+}
+.des{
+    text-align:center;
+    padding: 4px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom:20px;
+    background-color:whitesmoke;
+    color:black;
+    border: 1px solid black;
+    padding:3px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.main_title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color:white;
+    font-family: 'Kristen ITC';
+}
