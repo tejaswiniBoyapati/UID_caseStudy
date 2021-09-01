@@ -1,0 +1,337 @@
+<html>
+    <head><title>Comparison of two camera models</title>
+    </head>
+    <style>
+        :root {
+  --color-primary: #0073ff;
+  --color-white:black;
+  --color-black:white;
+  --color-black-1: #212b38;
+}
+
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: white;
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+   
+    body {
+         padding: 0;
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: grey;
+    }    
+    table{
+        position:absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        top:
+    }
+    tr{
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    th,td{
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th{
+        background-color:  rgb(71, 113, 231);
+    }
+    #header {
+        background-color: #16a085;
+        color: #fff;
+    }
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #1013c7;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.5);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 90%;
+        }
+    }
+    </style>    
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">Everything<span>Photography!</span></h1>
+            <ul>
+              <li><a href="homepage_2.html"><font size="5">Home</font></a></li>
+              <li><a href="#"><font size="5">Blog</font> <i class="fas fa-caret-down"></i></a>
+      
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="div_gallery.html">Gallery</a></li>
+                      <li><a href="article_card.html">Articles</a></li>
+                    </ul>
+                  </div>
+            </li> <li><a href="#"><font size="5">Freelance</font> <i class="fas fa-caret-down"></i></a>
+      
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+                    <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+                  </ul>
+                </div>
+          </li> <li><a href="#"><font size="5">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="Courses-2.0.html">Courses</a></li>
+                        <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                        <li><a href="e-Books-2.0.html">e-Books</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#"><font size="5">Gear</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="gear_product_card_2.html">Products</a></li>
+                        <li><a href="comparisions_2.html">Comparisions</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="homepage_2.html"><font size="5">Contact Us</font></a>
+              </li>
+            </ul>
+          </div>
+        <center>
+    <h1><u>Nikon D850 v/s Canon EOS 80D</u></h1>  
+    <br><br><br><br><br><br>
+    <img src= "https://images-na.ssl-images-amazon.com/images/I/81XyyEsFS7L._AC_SL1500_.jpg" alt="NIKON D850" width="300" height="300">
+    <img src="https://cdn1.smartprix.com/rx-iIrYtp2T7-w240-h290/canon-eos-80d-dslr-c.jpg" alt="CANON EOS 80D" width="300" height="300">
+    <table style="border:1px solid black;">
+    <table type border="7" bgcolor="white" width="800" height="500">
+        <tr>
+            <th>PARAMETERS</th>
+            <th>NIKON D850</th>
+            <th>Canon EOS 80D</th>
+        </tr>
+        <tr>
+            <td><b>Sensor</b></td>
+            <td>45.7MP FX-format CMOS (35.9 x 23.9mm)</td>
+            <td>APS-C format with 24.2 million effective pixels</td>
+        </tr>
+        <tr>
+            <td><b>Focal length conversion</b></td>
+            <td>1x</td>
+            <td>1.6x</td>
+        </tr>
+        <tr>
+            <td><b>Memory</b></td>
+            <td> 1x XQD, 1x SD/SDHC/SDXC (UHS-II)</td>
+            <td> SD/SDHC/SDXC (UHS-1) </td>
+        </tr>
+        <tr>
+            <td><b>ViewFinder</b></td>
+            <td>Optical pentaprism, 100% coverage</td>
+            <td>Optical covering 100%</td>
+        </tr>
+        <tr>
+            <td><b>Max Video Resolution</b></td>
+            <td>4K UHD 3840 x 2160 at 30/25/24p</td>
+            <td>Full HD (1920 x 1080)</td>
+        </tr>
+        <tr>
+            <td><b>ISO Range</b></td>
+            <td>64-25,600, expandable to 32-102,400</td>
+            <td>100-16,000, expandable to 25,600</td>
+        </tr>
+        <tr>
+            <td><b>Autofocus Points</b></td>
+            <td>153-point phase-detection AF, 99 cross-type </td>
+            <td>45, all cross-type</td>
+        </tr>
+        <tr>
+            <td><b>Max Burst Rate</b></td>
+            <td> 7fps (9fps with grip) </td>
+            <td>7fps</td>
+        </tr>
+        <tr>
+            <td><b>Screen</b></td>
+            <td>Tilting 3.2-inch touchscreen, 2,359k dots </td>
+            <td>Three-inch 1,040,000-dot Clear View II TFT</td>
+        </tr>
+        <tr>
+            <td><b>Shutter speeds</b></td>
+            <td>1/8000 sec to 30 sec, bulb, time</td>
+            <td>30-1/8,000sec, Bulb </td>
+        </tr>
+        <tr>
+            <td><b>Weight</b></td>
+            <td> 1,005g (body only, with battery and memory card)</td>
+            <td>650g (body only)</td>
+        </tr>
+        <tr>
+            <td><b>Dimensions</b></td>
+            <td>146 x 124 x 78.5mm</td>
+            <td>139 x 105 x 79mm</td>
+        </tr>
+        <tr>
+            <td><b>Power Supply</b></td>
+            <td>EN-EL15a lithium-ion battery (supplied)</td>
+            <td>Lithium-ion LP-E6N (supplied)</td>
+        </tr>
+        <tr>
+            <td><b>Where to buy them</b></td>
+            <td><a href="https://www.amazon.com/dp/B07542WQGW?tag=georiot-us-default-20&th=1&psc=1&ascsubtag=dcw-row-1265223349915771600-20&geniuslink=true">Buy Nikon D850 (Black)</a></td>
+            <td><a href="https://www.amazon.com/dp/B01N1GW3SO?tag=georiot-us-default-20&th=1&psc=1&ascsubtag=dcw-row-2560724224896407000-20&geniuslink=true">Buy Canon EOS 80D (32GB LED)</a></td>   
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<br><br><br>
+    <h1><u>Benro GoPlus Travel v/s Gitzo GT2542 Mountaineer Series</u></h1>
+    <br><br><br><br><br><br>
+    
+    <table type border="15">
+    <br><br><br><br><br><br><br><br><br><br
+    <tr>
+        <th><h3> PARAMETERS </h3></th>
+        <th><h3>   Benro GoPlus Travel FGP18A + B0 ball head   </h3></th>
+        <th><h3>   Gitzo GT2542 Mountaineer Series 2 + GH3382QD ball head   </h3></th>
+    </tr>
+    <tr>
+        <td><u> Material </u></td>
+        <td> Aluminum </td>
+        <td> Carbon fiber </td>
+    </tr>
+    <tr>
+        <td><u> Leg sections </u></td>
+        <td> 4 </td>
+        <td> 4 </td>
+    </tr>
+    <tr>
+        <td><u> Max load (legs/head) </u></td>
+        <td> 10/8kg </td>
+        <td>1 8/18kg </td>
+    </tr>
+    <tr>
+        <td><u> Max height (with head) </u></td>
+        <td> 165cm </td>
+        <td> 179cm </td>
+    </tr>
+    <tr>
+        <td><u> Folded height </u></td>
+        <td> 46cm </td>
+        <td> 66cm </td>
+    </tr>
+    <tr>
+        <td><u> Weight (with head) </u></td>
+        <td> 1.95kg </td>
+        <td> 2.5kg </td>
+    </tr>
+    <tr>
+        <td><u> Cost </u></td>
+        <td> Comapratively Cheaper </td>
+        <td> Very Expensive </td>
+    </tr>
+    <tr>
+        <td><b>Where to buy them</b></td>
+        <td><a href="https://www.amazon.com/dp/B01HMVNV7I?tag=georiot-us-default-20&th=1&psc=1&ascsubtag=dcw-row-1412171184343649000-20&geniuslink=true">Buy Benro SystemGo Plus Tripod (FGP18A) (Black)</a></td>
+        <td><a href="https://www.amazon.com/Gitzo-GK2542-82QD-Mountaineer-Carbon-Tripod/dp/B01DADT5QI">Buy Gitzo Series 2 Mountaineer Carbon Fiber Tripod GT2542</a></td>   
+    </tr>  
+    </table>
+    </body>
+    </center>
+    </html>
+    </body>
+    </center>
+    </html>
