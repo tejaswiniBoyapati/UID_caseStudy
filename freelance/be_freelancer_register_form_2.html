@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Freelance Register form</title>
+        <script  type = "text/javascript" src="signup.js" ></script>
+        <link rel="icon" type="image/png" href="logo_200x200.png"/>
+        <link rel="stylesheet" href="signupof.css" type="text/css">
+        <script type = "text/javascript">
+            function validateForm(){
+            var finame=document.getElementById("fname").value;
+            var laname=document.getElementById("lname").value;
+            var mail=document.getElementById("email").value;
+            var mobile=document.getElementById("pno").value;
+            var pw=document.getElementById("password").value;
+            var cpw=document.getElementById("cpassword").value;
+            var at =mail.indexOf("@");
+            var dot=mail.lastIndexOf(".");
+            if(finame=="")
+             {
+                alert("Please enter your firstname");
+                return false;
+             }
+            else if(laname=="")
+             {
+                alert("Please enter your last name");
+                return false;
+             }
+            else if(mail=="")
+            {
+                alert("Please enter your email");
+                return false;
+            }
+            else if (at< 1 || ( (dot - at) < 2 )) {
+               alert("Please enter correct email ID");
+               return false;
+                }
+            else if(mobile=="")
+            {
+                alert("Please enter your phone number");
+                return false;
+            }
+            else if (mobile<= 1000000000 || mobile<=9999999999) {
+               alert("phone number should be 10 digits");
+               return false;
+                }
+            else if(pw=="")
+            {
+                alert("Please enter your password");
+                return false;
+            }
+            else if (pw.length<8)
+            {
+                alert("length of the password should be greater than 8");
+                return false;
+            }
+            else if (pw.search(/[0-9]/)==-1)
+            {
+                alert("pawword should contain atleat a number");
+                return false;
+            }
+            else if (pw.search(/[A-Z]/)==-1)
+            {
+                alert("pawword should contain atleat a uppercase alphabet");
+                return false;
+            }
+            else if (pw.search(/[a-z]/)==-1)
+            {
+                alert("pawword should contain atleat a lowercase alphabet");
+                return false;
+            }
+             else if (pw.search(/[\@\#\$ \%\^\&\*\(\)\_\-\+\=\<\, \>\?]/)==-1){
+                alert("pawword should contain atleat a special symbol");
+                return false;
+            }
+            else if (cpw!=pw)
+            {
+                alert("password doesn't match");
+                return false;
+            }
+             else{
+               alert("signup successful");
+                return true;
+            }               
+           }                         
+           </script>
+           <style>
+               :root {
+  --color-primary: #0073ff;
+  --color-white:black;
+  --color-black:white;
+  --color-black-1: #212b38;
+}
+
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+           </style>
+    </head>
+    <body style="background: linear-gradient(to bottom, #003366 0%, #ccffff 100%);">
+        <div class="menu-bar">
+            <h1 class="logo">Everything<span>Photography!</span></h1>
+            <ul>
+              <li><a href="homepage_2.html"><font size="5">Home</font></a></li>
+              <li><a href="#"><font size="5">Blog</font> <i class="fas fa-caret-down"></i></a>
+      
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="div_gallery.html">Gallery</a></li>
+                      <li><a href="article_card.html">Articles</a></li>
+                    </ul>
+                  </div>
+            </li> <li><a href="#"><font size="5">Freelance</font> <i class="fas fa-caret-down"></i></a>
+      
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+                    <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+                  </ul>
+                </div>
+          </li> <li><a href="#"><font size="5">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="Courses-2.0.html">Courses</a></li>
+                        <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                        <li><a href="e-Books-2.0.html">e-Books</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#"><font size="5">Gear</font> <i class="fas fa-caret-down"></i></a>
+      
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="gear_product_card_2.html">Products</a></li>
+                        <li><a href="comparisions_2.html">Comparisions</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="homepage_2.html"><font size="5">Contact Us</font></a>
+              </li>
+            </ul>
+          </div>
+        <h2 style="text-align: center;">REGISTER!</h2>
+        <hr width="150" color="#f3971b">
+        <hr width="250" color="#f3971b">
+        <center>
+            <table style="border: solid 1px #aaa999;" align="center">
+                <tr>
+                    <td>
+            <div class="signup" >
+                         <form method ="post" ID="signup" action="" onsubmit="return validateForm()">
+                                    <table cellpadding="9"><tr></tr><tr><center><h2></h2></center></tr>        
+                                    <div class="firstname"> <tr><td><label>Firstname<a style=color:red;> *</a>        :</label></td><td><input type ="test" name ="text1" id="fname" placeholder="enter your first name " ></td></tr></div>
+                                    <tr><td><label>Lastname<a style=color:red;> *</a>         :</label></td><td><input type ="test" name ="text2" id="lname" placeholder="enter your last name " ></td></tr>
+                                    <tr><td><label>Date of birth    :</label></td><td><input type ="date" name ="text3" id="name" placeholder="enter your date of birth" ></td></tr>
+                                    <tr><td><label>Gender           :</label>&nbsp;&nbsp;&nbsp;</td>
+                                    <td><input type ="radio" name ="gender" id="male">&nbsp; <span id="male">male</span>&nbsp;&nbsp;&nbsp;         
+                                    <input type ="radio" name ="gender" id="female">&nbsp; <span id="female">female</span>&nbsp;&nbsp;&nbsp;         
+                                    <input type ="radio" name ="gender" id="transgender">&nbsp; <span id="transgender">transgender</span>&nbsp;&nbsp;&nbsp;</td></tr>
+                                    <tr><td><label>Emailid<a style=color:red;> *</a>          :</label></td><td><input name ="text7" id="email" placeholder="enter your emailid" ></td></tr>
+                                    <tr><td><label>Phonenumber<a style=color:red;> *</a>      :</label></td><td><input type ="test" name ="text8" id="pno" placeholder="enter your phonenumber" ></td></tr>
+                                    <tr><td><label>Enter password<a style=color:red;> *</a>   :</label></td><td><input type ="password" name="tesxtfeild2" id="password"  value="secrets"></td></tr>
+                                    <tr><td><label>Re-enter password<a style=color:red;> *</a> :</label></td><td><input type ="password" name="tesxtfeild3" id="cpassword" value="secrets"></td></tr>
+                                    <tr><td><label><input type="submit" id="submit" name="Submit" value="Submit"  /></label></td>
+                                    <td><input type="button" id="clear" name="Clear" value="clear" /></td></tr>
+                                    <tr ><td colspan="2"><center><h4>ALREADY  HAVE  AN  ACCOUNT ??  CLICK  Here <a href="be_freelancer_login_form_2.html" >LOGIN HERE</a></h4></center></td></tr>
+                                    </table>
+                    </form>
+            </div>
+            </td>
+            </tr>
+            </table>
+        </center>
+    </body>
+</HTML>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Login page</title>
+        <script type = "text/javascript">
+         function validateForm(){
+         var mail=document.getElementById("email-Id").value;
+         var pw=document.getElementById("password").value;
+         var at =mail.indexOf("@");
+         var dot=mail.lastIndexOf(".");
+         if(mail=="")
+         {
+             alert("Please enter your email");
+             return false;
+         }
+         else if(pw=="")
+         {
+             alert("Please enter your password");
+             return false;
+         }
+         else if (at< 1 || ( (dot - at) < 2 )) {
+            alert("Please enter correct email ID");
+            return false;
+             }
+         else if (pw.length<8)
+         {
+             alert("length of the password should be greater than 8");
+             return false;
+         }
+         else if (pw.search(/[0-9]/)==-1)
+         {
+             alert("pawword should contain atleat a number");
+             return false;
+         }
+         else if (pw.search(/[A-Z]/)==-1)
+         {
+             alert("pawword should contain atleat a uppercase alphabet");
+             return false;
+         }
+         else if (pw.search(/[a-z]/)==-1)
+         {
+             alert("pawword should contain atleat a lowercase alphabet");
+             return false;
+         }
+          else if (pw.search(/[\@\#\$ \%\^\&\*\(\)\_\-\+\=\<\, \>\?]/)==-1){
+             alert("pawword should contain atleat a special symbol");
+             return false;
+         }
+          else{
+            alert("login successful");
+             return true;
+         }               
+        }                         
+        </script>
+        <style>
+                :root {
+                    --color-primary: #0073ff;
+                    --color-white:black;
+                    --color-black:white;
+                    --color-black-1: #212b38;
+                  }
+                  
+                  
+                  .logo {
+                    color: var(--color-white);
+                    font-size: 30px;
+                  }
+                  
+                  .logo span {
+                    color: var(--color-primary);
+                  }
+                  
+                  .menu-bar {
+                    background-color: var(--color-black);
+                    height: 50px;
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 5%;
+                  
+                    position: relative;
+                  }
+                  
+                  .menu-bar ul {
+                    list-style: none;
+                    display: flex;
+                  }
+                  
+                  .menu-bar ul li {
+                    /* width: 120px; */
+                    padding: 10px 30px;
+                    /* text-align: center; */
+                  
+                    position: relative;
+                  }
+                  
+                  .menu-bar ul li a {
+                    font-size: 20px;
+                    color: var(--color-white);
+                    text-decoration: none;
+                  
+                    transition: all 0.3s;
+                  }
+                  
+                  .menu-bar ul li a:hover {
+                    color: var(--color-primary);
+                  }
+                  
+                  .fas {
+                    float: right;
+                    margin-left: 10px;
+                    padding-top: 3px;
+                  }
+                  
+                  /* dropdown menu style */
+                  .dropdown-menu {
+                    display: none;
+                  }
+                  
+                  .menu-bar ul li:hover .dropdown-menu {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background-color: var(--color-black);
+                  }
+                  
+                  .menu-bar ul li:hover .dropdown-menu ul {
+                    display: block;
+                    margin: 10px;
+                  }
+                  
+                  .menu-bar ul li:hover .dropdown-menu ul li {
+                    width: 150px;
+                    padding: 10px;
+                  }
+                  
+                  .dropdown-menu-1 {
+                    display: none;
+                  }
+                  
+                  .dropdown-menu ul li:hover .dropdown-menu-1 {
+                    display: block;
+                    position: absolute;
+                    left: 150px;
+                    top: 0;
+                    background-color: var(--color-black);
+                  }
+                  </style>
+    </head>
+    <body style="background-color: #899ba1;
+    background-image: linear-gradient(315deg, #000000 0%, #2d343d 74%);">
+    <div class="menu-bar">
+        <h1 class="logo">Everything<span>Photography!</span></h1>
+        <ul>
+          <li><a href="homepage_2.html"><font size="5">Home</font></a></li>
+          <li><a href="#"><font size="5">Blog</font> <i class="fas fa-caret-down"></i></a>
+  
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="div_gallery.html">Gallery</a></li>
+                  <li><a href="article_card.html">Articles</a></li>
+                </ul>
+              </div>
+        </li> <li><a href="#"><font size="5">Freelance</font> <i class="fas fa-caret-down"></i></a>
+  
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="be_freelancer_login_form_2.html">Be a freelancer</a></li>
+                <li><a href="hire_freelancer_2.html">Hire a freelancer</a></li>
+              </ul>
+            </div>
+      </li> <li><a href="#"><font size="5">e-Resource</font> <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="Courses-2.0.html">Courses</a></li>
+                    <li><a href="Tips-and-Tricks-2.0.html">Tips and tricks</a></li>
+                    <li><a href="e-Books-2.0.html">e-Books</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="#"><font size="5">Gear</font> <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="gear_product_card_2.html">Products</a></li>
+                    <li><a href="comparisions_2.html">Comparisions</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="homepage_2.html"><font size="5">Contact Us</font></a>
+          </li>
+        </ul>
+      </div>
+  
+        <center>
+            <p><h1 style="text-align:center"><font color="white">Be a Freelancer!!</font></h1></p>
+            <hr width="200" color="#f3971b">
+            <hr width="300" color="#f3971b">
+            <table style="border: solid 1px #aaa999; background-color: cornflowerblue;" align="center" cellpadding="40">
+                <tr>
+                    <td>
+            <div class="login" >
+                    <form method ="post" ID="login" action="" onsubmit="return validateForm()" autocomplete="off">  
+                        <table cellpadding="11"><tr></tr><tr><center><h3><font color="white">LOGIN HERE</font></h3></center></tr>          
+                        <tr><td><label><font color="white">Email-Id:</font><a style=color:red;> *</a></label></td> <td><input  name ="textfeild" placeholder="enter your emailid" id="email-Id" ></td></tr>
+                        <tr><td><label><font color="white">Password:</font><a style=color:red;> *</a></label></td><td><input type ="password" name="tesxtfeild2" value="secrets" id="password"></td></tr>
+                        <tr><td><input type="submit" id="submit" name="Submit" value="Submit" ></td>
+                        <td><input type="button" id="clear" name="Clear" value="clear" /></td></tr></table>
+                        <center><h4><font color="white">Don't have an account? Click Here </font><a href="be_freelancer_register_form_2.html" ><font color="black">SIGNUP</font></a></h4></center>
+                        <center><h4><font color="white">FORGOT PASSWORD? Click Here </font><a href="" onclick="forget_pw()"><font color="black">FORGOT PASSWORD</font></a></h4></center>
+                        <script>
+                          function forget_pw()
+                          {
+                            window.alert("Email sent. Reset password!");
+                          }
+                        </script>
+                        <br>
+                    </form>
+            </div>
+            </td>
+            </tr>
+            </table><br><br><br>
+        <h2 style="text-align: center;"><font color="white">Also, Check out some Freelance Jobs in Photography:</font></h2>
+        <table align="center" cellpadding="30">
+         <tr>
+           <td style="background-color:ccffeb;">
+             <img  src="https://i1.wp.com/academiamag.com/wp-content/uploads/2020/03/FREELANCER-LOGO.jpg?fit=1200%2C1200&ssl=1" height="400px" width="400px" alt="Courses" border="1" usemap="#redirect1" >   
+           </td>
+           <td style="background-color:ccffeb;">
+             <img  src="https://www.botart.in.rs/wp-content/uploads/2020/11/upwork.png" height="400px" width="400px" alt="Tips&Tricks" border="1" usemap="#redirect2">
+           </td>
+       </tr>
+       <tr>
+         <td style="text-align: center;">
+           <h1><b><font color="white">Jobs in Freelancer</font></b></h1>
+         </td>
+         <td style="text-align: center;">
+           <h1><b><font color="white">Jobs in Upwork</font></b></h1>
+         </td>
+       </tr>
+
+        </table>
+        <map name="redirect1">
+         <area href="https://www.freelancer.in/jobs/photography/" coords="0,2,721,499" shape="rect">
+         </map>
+         <map name="redirect2">
+           <area href="https://www.upwork.com/freelance-jobs/photography/" coords="799,395,1,4" shape="rect">
+         </map>
+        </center>
+    </body>
+</HTML>
